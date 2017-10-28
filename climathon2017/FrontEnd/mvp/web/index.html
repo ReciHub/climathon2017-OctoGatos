@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Carbon</title>
+<title>CarboClean | Início</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -18,7 +18,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!----webfonts--->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
 <!---//webfonts--->  
 <!-- Nav CSS -->
 <link href="css/custom.css" rel="stylesheet">
@@ -40,11 +40,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Carban</a>
+                <a class="navbar-brand " href="index.html">CarboClean</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
+				<!--<li class="dropdown">
 	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-comments-o"></i><span class="badge">4</span></a>
 	        		<ul class="dropdown-menu">
 						<li class="dropdown-menu-header">
@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li class="avatar">
 							<a href="#">
-								<img src="images/1.png" alt=""/>
+								<img src="images/jose.jpg" alt=""/>
 								<div>New message</div>
 								<small>1 minute ago</small>
 								<span class="label label-info">NEW</span>
@@ -103,114 +103,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="#">View all messages</a>
 						</li>	
 	        		</ul>
-	      		</li>
+	      		</li>-->
+	      		<script type="text/javascript" src="">
+	      			$("#coinValue").click(function(){
+	      				$.get('coin.json', function(data){
+	      					$("#coinValue").text(data);	
+	      				});	
+	      			});
+	      		</script>
+	      		<li><a class="dropdown-toggle avatar coin-col"><img src = "images/carbobit-04.png"> <b>700</b></a></li>
 			    <li class="dropdown">
-	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="images/1.png"><span class="badge">9</span></a>
+	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="images/jose.jpg"><span class="badge">4</span></a>
 	        		<ul class="dropdown-menu">
 						<li class="dropdown-menu-header text-center">
-							<strong>Account</strong>
+							<strong>Sua conta</strong>
 						</li>
-						<li class="m_2"><a href="#"><i class="fa fa-bell-o"></i> Updates <span class="label label-info">42</span></a></li>
-						<li class="m_2"><a href="#"><i class="fa fa-envelope-o"></i> Messages <span class="label label-success">42</span></a></li>
-						<li class="m_2"><a href="#"><i class="fa fa-tasks"></i> Tasks <span class="label label-danger">42</span></a></li>
-						<li><a href="#"><i class="fa fa-comments"></i> Comments <span class="label label-warning">42</span></a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-bell-o"></i> Atualizações <span class="label label-info">5</span></a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-envelope-o"></i> Avisos <span class="label label-success">1</span></a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-tasks"></i> Tarefas <span class="label label-danger">2</span></a></li>
 						<li class="dropdown-menu-header text-center">
-							<strong>Settings</strong>
+							<strong>Configurações</strong>
 						</li>
-						<li class="m_2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-						<li class="m_2"><a href="#"><i class="fa fa-wrench"></i> Settings</a></li>
-						<li class="m_2"><a href="#"><i class="fa fa-usd"></i> Payments <span class="label label-default">42</span></a></li>
-						<li class="m_2"><a href="#"><i class="fa fa-file"></i> Projects <span class="label label-primary">42</span></a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-user"></i> Conta</a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-users"></i> Meu Grupo</a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-usd"></i> Transações <span class="label label-default">2</span></a></li>
 						<li class="divider"></li>
-						<li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li>
-						<li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>	
+						<li class="m_2"><a href="#"><i class="fa fa-shield"></i> Segurança</a></li>
+						<li class="m_2"><a href="login.html"><i class="fa fa-lock"></i> Sair</a></li>	
 	        		</ul>
 	      		</li>
 			</ul>
-			<form class="navbar-form navbar-right">
+			<!--<form class="navbar-form navbar-right">
               <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
-            </form>
+            </form>-->
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> - Home</a>
+                        <li style = "padding-bottom: 3em;">
+                        	<img class = "img-responsive center-block" style= "width:70%"src="images/Climathon2017-logotipo1-01.png">
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-align-left" aria-hidden="true"></i> - Rank</a>
+                            <a href="index.html"><i class="fa fa-home" aria-hidden=a"true"></i> - Início</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-money" aria-hidden="true"></i> - Loja</a>
+                            <a href="rank.html"><i class="fa fa-align-left" aria-hidden="true"></i> - Ranqueamento</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-users" aria-hidden="true"></i> - Meu grupo</a>
+                            <a href="loja.html"><i class="fa fa-money" aria-hidden="true"></i> - Loja</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-laptop nav_icon"></i>Rank<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="grids.html">Grid System</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a href="meugrupo.html"><i class="fa fa-users" aria-hidden="true"></i> - Meu grupo</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-indent nav_icon"></i>Loja<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="graphs.html">Graphs</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Meu Grupo<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="inbox.html">Inbox</a>
-                                </li>
-                                <li>
-                                    <a href="compose.html">Compose email</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="widgets.html"><i class="fa fa-flask nav_icon"></i>Widgets</a>
-                        </li>
-                         <li>
-                            <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="forms.html">Basic Forms</a>
-                                </li>
-                                <li>
-                                    <a href="validation.html">Validation</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-table nav_icon"></i>Tables<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="basic_tables.html">Basic Tables</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw nav_icon"></i>Css<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="media.html">Media</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login</a>
-                                </li>
+                        
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -227,35 +171,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         		<div class="r3_counter_box">
                     <i class="pull-left fa fa-thumbs-up icon-rounded"></i>
                     <div class="stats">
-                      <h5><strong>45%</strong></h5>
-                      <span>New Orders</span>
+                      <h5><strong>5 dias seguidos!</strong></h5>
+                      <span>Parabéns!</span>
                     </div>
                 </div>
         	</div>
         	<div class="col-md-3 widget widget1">
         		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-users user1 icon-rounded"></i>
+                    <i class="pull-left fa fa-heart user1 icon-rounded"></i>
                     <div class="stats">
-                      <h5><strong>1019</strong></h5>
-                      <span>New Visitors</span>
+                      <h5><strong>23.423 Kcal</strong></h5>
+                      <span>Gastas</span>
                     </div>
                 </div>
         	</div>
         	<div class="col-md-3 widget widget1">
         		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-comment user2 icon-rounded"></i>
+                    <i class="pull-left fa fa-road user2 icon-rounded"></i>
                     <div class="stats">
-                      <h5><strong>1012</strong></h5>
-                      <span>New Users</span>
+                      <h5><strong>23.7 Km</strong></h5>
+                      <span>Rodados</span>
                     </div>
                 </div>
         	</div>
         	<div class="col-md-3 widget">
         		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-dollar dollar1 icon-rounded"></i>
+                    <i class="pull-left fa fa-globe dollar1 icon-rounded"></i>
                     <div class="stats">
-                      <h5><strong>$450</strong></h5>
-                      <span>Profit Today</span>
+                      <h5><strong>8.73 Kg</strong></h5>
+                      <span>De carbono não emitido</span>
                     </div>
                 </div>
         	 </div>
@@ -269,42 +213,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		       <div class="activity_box">
 		        <div class="scrollbar" id="style-2">
                    <div class="activity-row">
-	                 <div class="col-xs-1"><i class="fa fa-thumbs-up text-info icon_13"> </i>  </div>
-	                 <div class="col-xs-3 activity-img"><img src='images/5.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-1"><i class="fa fa-level-up"> </i>  </div>
+	                 <div class="col-xs-3 activity-img"><img class = "pp-mg-img" src='images/rafael.jpg' class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
-	                 	<h5><a href="#">Lorem Ipsum</a> liked <a href="#">random</a></h5>
-	                    <p>Lorem Ipsum is simply dummy</p>
-	                    <h6>8:03</h6>
+	                 	<h5><a href="#">Rafael Faria</a> ganhou <!--<a href="#">-->210 Carbobits!<!--</a>--></h5>
+	                    <p><!----></p>
+	                    <h6>16:57</h6>
 	                 </div>
 	                 <div class="clearfix"> </div>
                     </div>
 	  			    <div class="activity-row">
-	                 <div class="col-xs-1"><i class="fa fa-comment text-info"></i> </div>
-	                 <div class="col-xs-3 activity-img"><img src='images/3.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-1"><i class="fa fa-level-up"></i> </div>
+	                 <div class="col-xs-3 activity-img"><img class = "pp-mg-img" src='images/ramon.jpg' class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
-	                 	<h5><a href="#">simply random</a> liked <a href="#">passages</a></h5>
-	                    <p>Lorem Ipsum is simply dummy</p>
-	                    <h6>8:03</h6>
+	                 	<h5><a href="#">Ramon Wanderley</a> ganhou <!--<a href="#">-->130 Carbobits!</a></h5>
+	                    <p><!----></p>
+	                    <h6>15:21</h6>
 	                 </div>
 	                 <div class="clearfix"> </div>
                     </div>
                     <div class="activity-row">
-	                 <div class="col-xs-1"><i class="fa fa-check text-info icon_11"></i></div>
-	                 <div class="col-xs-3 activity-img"><img src='images/1.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-1"><i class="fa fa-users"></i></div>
+	                 <div class="col-xs-3 activity-img"><img class = "pp-mg-img" src='images/jose.jpg' class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
-	                 	<h5><a href="#">standard chunk</a> liked <a href="#">model</a></h5>
-	                    <p>Lorem Ipsum is simply dummy</p>
-	                    <h6>8:03</h6>
+		                 	<h5><a href="#">Você</a> tem um evento do seu <a href="rank.html">Grupo</a></h5>
+	                    <p><!----></p>
+	                    <h6>12:11</h6>
 	                 </div>
 	                 <div class="clearfix"> </div>
                     </div>
                     <div class="activity-row1">
-	                 <div class="col-xs-1"><i class="fa fa-user text-info icon_12"></i></div>
-	                 <div class="col-xs-3 activity-img"><img src='images/4.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-1"><i class="fa fa-level-up"></i></div>
+	                 <div class="col-xs-3 activity-img"><img class = "pp-mg-img" src='images/otacilio.jpg' class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
-	                 	<h5><a href="#">perspiciatis</a> liked <a href="#">donating</a></h5>
-	                    <p>Lorem Ipsum is simply dummy</p>
-	                    <h6>8:03</h6>
+	                 	<h5><a href="#">Otacílio Maia</a> ganhou <!--<a href="#">-->135 Carbobits!</a></h5>
+	                    <p><!----></p>
+	                    <h6>10:42</h6>
 	                 </div>
 	                 <div class="clearfix"> </div>
                      </div>
@@ -313,17 +257,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    </div>
 			<div class="col-md-4 stats-info">
                 <div class="panel-heading">
-                    <h4 class="panel-title">Browser Stats</h4>
+                    <h4 class="panel-title">Seus Locais</h4>
                 </div>
                 <div class="panel-body">
                     <ul class="list-unstyled">
-                        <li>Google Chrome<div class="text-success pull-right">12%<i class="fa fa-level-up"></i></div></li>
-                        <li>Firefox<div class="text-success pull-right">15%<i class="fa fa-level-up"></i></div></li>
-                        <li>Internet Explorer<div class="text-success pull-right">18%<i class="fa fa-level-up"></i></div></li>
-                        <li>Safari<div class="text-danger pull-right">17%<i class="fa fa-level-down"></i></div></li>
-                        <li>Opera<div class="text-danger pull-right">10%<i class="fa fa-level-down"></i></div></li>
-                        <li>Mobile &amp; tablet<div class="text-success pull-right">14%<i class="fa fa-level-up"></i></div></li>
-                        <li class="last">Others<div class="text-success pull-right">5%<i class="fa fa-level-up"></i></div></li> 
+                        <li>Temperatura na Av.Agamenon Magalhães<div class="text-success pull-right"><i class="fa fa-level-up"></i></div></li>
+                        <li>Temperatura na Av.Rosa e silva<div class="text-success pull-right"><i class="fa fa-level-up"></i></div></li>
+                        <li>Temperatura na Rua do Futuro<div class="text-success pull-right"><i class="fa fa-level-up"></i></div></li>
+                        <li>Temperatura na Rua Quarenta e Oito<div class="text-danger pull-right"><i class="fa fa-level-down"></i></div></li>
+                        <li>Temperatura na U.F.R.P.E<div class="text-danger pull-right"><i class="fa fa-level-down"></i></div></li>
+                        <li>Temperatura em Marco Zero<div class="text-success pull-right"><i class="fa fa-level-up"></i></div></li>
+                        <li class="last">Media da cidade<div class="text-success pull-right"><i class="fa fa-level-up"></i></div></li> 
                     </ul>
                 </div>
             </div>
@@ -346,54 +290,105 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	       <div id="slider"></div>
 <script>
 
-var seriesData = [ [], [], [], [], [] ];
-var random = new Rickshaw.Fixtures.RandomData(50);
+    var seriesData = [ [], [], [], [], [] ];
+    var random = new Rickshaw.Fixtures.RandomData(50);
+    console.log(random);
 
-for (var i = 0; i < 75; i++) {
-	random.addData(seriesData);
+    for (var i = 0; i < 75; i++) {
+        random.addData(seriesData);
+    }
+
+    console.log(seriesData);
+    console.log(random);
+    var previousData = seriesData;
+
+    var graph = new Rickshaw.Graph( {
+        element: document.getElementById("chart"),
+        renderer: 'multi',
+        
+        dotSize: 5,
+        series: [
+            {
+                name: 'temperature',
+                data: seriesData[0],
+                color: '#AFE9FF',
+                renderer: 'stack'
+            }, {
+                name: 'heat index',
+                data: seriesData[1],
+                color: '#FFCAC0',
+                renderer: 'line'
+            }, {
+                name: 'dewpoint',
+                data: seriesData[2],
+                color: '#555',
+                renderer: 'scatterplot'
+            }, 
+
+            // {
+            //     name: 'pop',
+            //     data: seriesData[3].map(function(d) { return { x: d.x, y: d.y / 4 } }),
+            //     color: '#555',
+            //     renderer: 'bar'
+            // },
+
+            //  {
+            //     name: 'humidity',
+            //     data: seriesData[3].map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+            //     renderer: 'bar',
+            //     color: '#ef553a'
+            // }
+        ]
+    } );
+
+
+    graph.render();
+
+    var detail = new Rickshaw.Graph.HoverDetail({
+        graph: graph
+    });    
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
-var graph = new Rickshaw.Graph( {
-	element: document.getElementById("chart"),
-	renderer: 'multi',
-	
-	dotSize: 5,
-	series: [
-		{
-			name: 'temperature',
-			data: seriesData.shift(),
-			color: '#AFE9FF',
-			renderer: 'stack'
-		}, {
-			name: 'heat index',
-			data: seriesData.shift(),
-			color: '#FFCAC0',
-			renderer: 'stack'
-		}, {
-			name: 'dewpoint',
-			data: seriesData.shift(),
-			color: '#555',
-			renderer: 'scatterplot'
-		}, {
-			name: 'pop',
-			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y / 4 } }),
-			color: '#555',
-			renderer: 'bar'
-		}, {
-			name: 'humidity',
-			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-			renderer: 'line',
-			color: '#ef553a'
-		}
-	]
-} );
 
+var cool = "";
+var leituraAnterior = "";
+    setInterval(function() {
+        console.log("Oi");
+        // console.log(window.location.pathname);
+        $.get(window.location.pathname + "/data.json", function(data,status){
+            if(1){ 
+                var incredible = [];
+                incredible = data.split('\n');
+                incredible.shift();
+                incredible.pop();
+                console.log(incredible);
+                console.log(data);
+                $("#refresh").text(data);
+                for(var i = 0; i < 3; i++){
+                    var anterior = seriesData[i][74].x;
+                    // seriesData[i] = seriesData[i].map(function(d) { return { x: d.x + 50, y: d.y } })
+                    seriesData[i].shift();
+                    seriesData[i].push({ x: anterior + 50, y: parseFloat(incredible[i])})
+                }
+                // seriesData.forEach( function(series) {
+                //     series.shift();
+                //     series.push( { x: series[1].x + 50, y: series} );
+                // });
+                // seriesData[0].push( { x: seriesData[0][1].x + 50, y: getRandomInt(2,100)} );
+                console.log(seriesData[0]);
+                graph.update();
+            }else{
+                leituraAnterior = data;
+            }
 
-graph.render();
+        });
+},1000);
 
-var detail = new Rickshaw.Graph.HoverDetail({
-	graph: graph
-});
 </script>
 </div>
 	      <!-- map -->
@@ -422,7 +417,7 @@ var detail = new Rickshaw.Graph.HoverDetail({
        <div class="clearfix"> </div>
     </div>
     <div class="content_bottom">
-     <div class="col-md-8 span_3">
+     <!--<div class="col-md-8 span_3">
 		  <div class="bs-example1" data-example-id="contextual-table">
 		    <table class="table">
 		      <thead>
@@ -491,8 +486,8 @@ var detail = new Rickshaw.Graph.HoverDetail({
 		      </tbody>
 		    </table>
 		   </div>
-	   </div>
-	   <div class="col-md-4 span_4">
+	   </div>-->
+	   <!--<div class="col-md-4 span_4">
 		 <div class="col_2">
 		  <div class="box_1">
 		   <div class="col-md-6 col_1_of_2 span_1_of_2">
@@ -544,7 +539,7 @@ var detail = new Rickshaw.Graph.HoverDetail({
 			</div>
 			<p class="monday">Monday 10 July</p>
 		  </div>
-		</div>
+		</div>-->
 		<div class="clearfix"> </div>
 	    </div>
 		<div class="copy">

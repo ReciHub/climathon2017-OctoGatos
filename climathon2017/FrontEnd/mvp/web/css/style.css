@@ -2,12 +2,66 @@
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+License URL: http://creativecomcas.org/licenses/by/3.0/
 */
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
+
+.cabecalho{
+  font-family: 'Roboto';
+}
+.pp-mg{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  
+}
+.pp-mg-img2{
+  border-radius:50%;
+}
+.pp-mg-img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  
+}
+
+.but-on{
+  background-color: #615FFF;
+  border-color: #615FFF;
+  border-style: solid;
+  color: #FF975F;
+}
+
+.coin-col{
+  color:#FFC1F2;
+  font-size: 1.7vw!important;
+}
+
+.sub-txt{
+  
+}
+
+.cell-f{
+  max-width:50%;
+  max-height:50%;
+}
+
+.pad-prod{
+  padding-top: 10%;
+}
+.image-prod{
+  border-radius: 10%;
+}
+
+.back-blue{
+  background: #615fff;
+}
+.back-white{
+    	background:#FFFFFF;
+}
 
 html, body{
   	font-family: 'Roboto', sans-serif;
@@ -223,11 +277,11 @@ body a{
   font-family: 'Roboto', sans-serif;
 }
 nav.top1.navbar.navbar-default.navbar-static-top {
-  background-color:rgb(6, 217, 149);
+  background-color:rgb(72, 204, 36);
   font-family: 'Roboto', sans-serif;
 }
 .navbar-default .navbar-brand {
-  color: #fff !important;
+  color: #FFF !important;
   font-size: 30px;
   font-weight: 500;
 }
@@ -2036,7 +2090,8 @@ h2.form-heading {
   width: 100%;
 }
 body#login{
-  background: url(../images/bg.jpg)no-repeat;
+
+  background: url(../images/leaf-nature-green-spring-122429.jpeg)no-repeat;
   background-size:cover;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -2503,6 +2558,9 @@ ul.new {
 }
 p.monday {
   font-size: 1em;
+}
+.blue-color {
+  color:'blue';
 }
 .grid-date h4 {
   font-size:2.5em;
